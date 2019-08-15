@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".CalculateFragment"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#FFF">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/lbl_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/avenir_next"
+                    android:gravity="center"
+                    android:text="Mennyi spórolna havonta?"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:contextClickable="false"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Adja meg az összeget Ft-ban!"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textCursorDrawable="@color/colorPrimaryDark" />
+
+            <TextView
+                    android:id="@+id/lbl_roofType"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/avenir_next"
+                    android:gravity="center"
+                    android:text="Válassza ki tetőjének típusát!"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+            </HorizontalScrollView>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                    <RadioGroup
+                            android:id="@+id/radiogroup1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                        <RadioButton
+                                android:id="@+id/ferde_radio_btn"
+                                android:layout_width="130dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="10dp"
+                                android:width="100dip"
+                                android:background="@drawable/btn_bg_change_color"
+                                android:button="@android:color/transparent"
+                                android:contextClickable="false"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:text="Ferde"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        <RadioButton
+                                android:id="@+id/lapos_radio_btn"
+                                android:layout_width="130dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/btn_bg_change_color"
+                                android:button="@android:color/transparent"
+                                android:contextClickable="false"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:text="Lapos"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                    </RadioGroup>
+                </TableRow>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/lbl_roofCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/avenir_next"
+                    android:gravity="center"
+                    android:text="Válassza ki tetőjének fedését!"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                        <RadioGroup
+                                android:id="@+id/radiogroup2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                            <RadioButton
+                                    android:id="@+id/btn_cserep_radio"
+                                    android:layout_width="130dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/btn_bg_change_color"
+                                    android:button="@android:color/transparent"
+                                    android:contextClickable="false"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:text="Égetett cserép"
+                                    android:textAppearance="@style/TextAppearance.AppCompat"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            <RadioButton
+                                    android:id="@+id/btn_beton_radio"
+                                    android:layout_width="130dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/btn_bg_change_color"
+                                    android:button="@android:color/transparent"
+                                    android:contextClickable="false"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:text="Beton cserép"
+                                    android:textAppearance="@style/TextAppearance.AppCompat"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            <RadioButton
+                                    android:id="@+id/btn_fem_radio"
+                                    android:layout_width="130dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/btn_bg_change_color"
+                                    android:button="@android:color/transparent"
+                                    android:contextClickable="false"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:text="Fémlemez"
+                                    android:textAppearance="@style/TextAppearance.AppCompat"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            <RadioButton
+                                    android:id="@+id/btn_zsin_radio"
+                                    android:layout_width="130dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/btn_bg_change_color"
+                                    android:button="@android:color/transparent"
+                                    android:contextClickable="false"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:text="Zsindely"
+                                    android:textAppearance="@style/TextAppearance.AppCompat"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"/>
+
+                            <RadioButton
+                                    android:id="@+id/btn_pala_radio"
+                                    android:layout_width="130dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_bg_change_color"
+                                    android:button="@android:color/transparent"
+                                    android:contextClickable="false"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:text="Pala"
+                                    android:textAppearance="@style/TextAppearance.AppCompat"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                    android:id="@+id/lbl_roofOrientation"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/avenir_next"
+                    android:gravity="center"
+                    android:text="Tető tájolása"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView_comp_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/calibrelight"
+                    android:text="Válassza ki, hogy milyen irányból sütné napelemét a nap! Ha kettő közé esik, akkor mind a kettőt válassza ki!"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+            <ImageView
+                    android:id="@+id/img_compass"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/compass" />
+
+            <TextView
+                    android:id="@+id/img_angle"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/avenir_next"
+                    android:gravity="center"
+                    android:text="Tető dőlése"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView_comp_desc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/calibrelight"
+                    android:text="A rendszer méretét nagy mértékben határozza meg a dőlésszög. Írja be, hogy mekkora szögben áll tetője a vízszinteshez képest."
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+            <ImageView
+                    android:id="@+id/img_angle"
+                    android:layout_width="240dp"
+                    android:layout_height="155dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/angle" tools:ignore="DuplicateIds"/>
+
+            <EditText
+                    android:id="@+id/editText_angle"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:contextClickable="false"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Adja meg a szöget!"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textCursorDrawable="@color/colorPrimaryDark"
+                    android:textStyle="italic" />
+
+            <Button
+                    android:id="@+id/view_offers_btn"
+                    android:layout_width="357dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_rounded_corners_gradient"
+                    android:fontFamily="@font/avenir_next"
+                    android:text="Számolás"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textScaleX="2"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    </RelativeLayout>
