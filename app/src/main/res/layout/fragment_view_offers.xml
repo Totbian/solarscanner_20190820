@@ -4,8 +4,7 @@
              xmlns:card_view="http://schemas.android.com/apk/res-auto"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".ViewCompaniesFragment"
-    android:background="@color/cardview_light_background">
+             android:background="@color/cardview_light_background">
 
     <ScrollView
             android:layout_width="match_parent"
@@ -18,24 +17,85 @@
 
             <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    card_view:cardElevation="34dp"
-                    card_view:cardCornerRadius="10dp"
-                    android:layout_margin="20dp">
-                <Button
-                        android:text="Button"
-                        android:layout_gravity="right"
-                        android:layout_margin="10dp"
-                        android:layout_width="144dp"
-                        android:layout_height="100dp" android:id="@+id/button2"/>
+                    android:layout_height="350dp"
+                    card_view:cardElevation="24dp"
+                    card_view:cardCornerRadius="8dp"
+                    android:layout_margin="10dp">
+
+             <androidx.constraintlayout.widget.ConstraintLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                 <ImageView android:layout_width="match_parent"
+                            android:layout_height="210dp"
+                            android:id="@+id/imageView"
+                            android:background="@drawable/sky_system_logo"/>
+
+
+                 <TextView android:layout_width="match_parent"
+                           android:id="@+id/textView1"
+                           android:layout_height="40dp"
+                           android:text="Sky System Kft."
+                           android:gravity="center_vertical"
+                           android:textStyle="bold"
+                           android:textSize="16dp"
+                           card_view:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                           android:layout_marginTop="10dp" card_view:layout_constraintTop_toBottomOf="@+id/imageView"
+                           card_view:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp" />
+
+                 <TextView android:layout_width="match_parent"
+                           android:id="@+id/textview2"
+                           android:layout_height="40dp"
+                           android:text="10 év garancia •• MFB hitel 0%-os kamattal napelem rendszerekre"
+                           android:textStyle="bold"
+                           android:textSize="12sp"
+                           card_view:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                           card_view:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp"
+                           card_view:layout_constraintHorizontal_bias="0.0"
+                           card_view:layout_constraintTop_toBottomOf="@+id/textView1"
+                           card_view:layout_constraintBottom_toTopOf="@+id/button2"/>
+
+                 <TextView android:layout_width="150dp"
+                           android:layout_height="40dp"
+                           android:id="@+id/price_here_shown"
+                           android:text="price_here_shown"
+                           android:textColor="@color/colorPrimary"
+                           android:gravity="center_vertical"
+                           android:textStyle="bold"
+                           android:textSize="24sp"
+                           card_view:layout_constraintTop_toBottomOf="@+id/textview2"
+                           card_view:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"/>
+
+                 <Button
+                         android:id="@+id/button2"
+                         android:layout_width="150dp"
+                         android:layout_height="40dp"
+                         android:background="@drawable/rounded_edittext_selected"
+                         android:button="@android:color/transparent"
+                         android:contextClickable="false"
+                         android:ems="10"
+                         android:gravity="center"
+                         android:text="Ajánlatkérés"
+                         android:textColor="#ff0266"
+                         android:textAppearance="@style/TextAppearance.AppCompat"
+                         android:textSize="18sp"
+                         android:textStyle="bold"
+                         card_view:layout_constraintEnd_toEndOf="parent"
+                         android:layout_marginEnd="10dp" android:layout_marginBottom="10dp"
+                         card_view:layout_constraintBottom_toBottomOf="parent"/>
+
+             </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    card_view:cardElevation="34dp"
-                    card_view:cardCornerRadius="10dp"
-                    android:layout_margin="20dp">
+                    android:layout_height="250dp"
+                    card_view:cardElevation="24dp"
+                    card_view:cardCornerRadius="8dp"
+                    android:layout_margin="10dp">
                 <Button
                         android:text="Button"
                         android:layout_gravity="right"
@@ -46,10 +106,10 @@
 
             <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    card_view:cardElevation="34dp"
-                    card_view:cardCornerRadius="10dp"
-                    android:layout_margin="20dp">
+                    android:layout_height="250dp"
+                    card_view:cardElevation="24dp"
+                    card_view:cardCornerRadius="8dp"
+                    android:layout_margin="10dp">
                 <Button
                         android:text="Button"
                         android:layout_gravity="right"
@@ -60,10 +120,10 @@
 
             <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    card_view:cardElevation="34dp"
-                    card_view:cardCornerRadius="10dp"
-                    android:layout_margin="20dp">
+                    android:layout_height="250dp"
+                    card_view:cardElevation="24dp"
+                    card_view:cardCornerRadius="8dp"
+                    android:layout_margin="10dp">
                 <Button
                         android:text="Button"
                         android:layout_gravity="right"
@@ -74,10 +134,10 @@
 
             <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    card_view:cardElevation="34dp"
-                    card_view:cardCornerRadius="10dp"
-                    android:layout_margin="20dp">
+                    android:layout_height="250dp"
+                    card_view:cardElevation="24dp"
+                    card_view:cardCornerRadius="8dp"
+                    android:layout_margin="10dp">
                 <Button
                         android:text="Button"
                         android:layout_gravity="right"

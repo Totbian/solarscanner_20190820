@@ -4,8 +4,9 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".CalculateFragment"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:background="#FFF">
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:background="@color/colorPrimaryDark">
+
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -22,8 +23,8 @@
                     android:layout_marginTop="50dp"
                     android:fontFamily="@font/avenir_next"
                     android:gravity="center"
-                    android:text="Mennyi spórolna havonta?"
-                    android:textColor="@android:color/background_dark"
+                    android:text="Mennyit spórolna havonta?"
+                    android:textColor="#FFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -39,9 +40,10 @@
                     android:ems="10"
                     android:gravity="center"
                     android:hint="Adja meg az összeget Ft-ban!"
+                    android:textColorHint="#FFF"
                     android:inputType="number"
                     android:textAlignment="center"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="#FFF"
                     android:textCursorDrawable="@color/colorPrimaryDark" />
 
             <TextView
@@ -52,7 +54,7 @@
                     android:fontFamily="@font/avenir_next"
                     android:gravity="center"
                     android:text="Válassza ki tetőjének típusát!"
-                    android:textColor="@android:color/background_dark"
+                    android:textColor="#FFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -80,10 +82,11 @@
                             android:id="@+id/radiogroup1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal" >
+                            android:orientation="horizontal">
 
                         <RadioButton
                                 android:id="@+id/ferde_radio_btn"
+                                android:elevation="24dp"
                                 android:layout_width="130dp"
                                 android:layout_height="100dp"
                                 android:layout_marginRight="10dp"
@@ -95,6 +98,7 @@
                                 android:ems="10"
                                 android:gravity="center"
                                 android:text="Ferde"
+                                android:textColor="#FFF"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
@@ -109,6 +113,7 @@
                                 android:ems="10"
                                 android:gravity="center"
                                 android:text="Lapos"
+                                android:textColor="#FFF"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
@@ -125,7 +130,7 @@
                     android:fontFamily="@font/avenir_next"
                     android:gravity="center"
                     android:text="Válassza ki tetőjének fedését!"
-                    android:textColor="@android:color/background_dark"
+                    android:textColor="#FFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -161,6 +166,7 @@
                                     android:ems="10"
                                     android:gravity="center"
                                     android:text="Égetett cserép"
+                                    android:textColor="#FFF"
                                     android:textAppearance="@style/TextAppearance.AppCompat"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -177,6 +183,7 @@
                                     android:ems="10"
                                     android:gravity="center"
                                     android:text="Beton cserép"
+                                    android:textColor="#FFF"
                                     android:textAppearance="@style/TextAppearance.AppCompat"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -193,6 +200,7 @@
                                     android:ems="10"
                                     android:gravity="center"
                                     android:text="Fémlemez"
+                                    android:textColor="#FFF"
                                     android:textAppearance="@style/TextAppearance.AppCompat"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -209,6 +217,7 @@
                                     android:ems="10"
                                     android:gravity="center"
                                     android:text="Zsindely"
+                                    android:textColor="#FFF"
                                     android:textAppearance="@style/TextAppearance.AppCompat"
                                     android:textSize="18sp"
                                     android:textStyle="bold"/>
@@ -227,6 +236,7 @@
                                     android:gravity="center"
                                     android:text="Pala"
                                     android:textAppearance="@style/TextAppearance.AppCompat"
+                                    android:textColor="#FFF"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                         </RadioGroup>
@@ -242,7 +252,7 @@
                     android:fontFamily="@font/avenir_next"
                     android:gravity="center"
                     android:text="Tető tájolása"
-                    android:textColor="@android:color/background_dark"
+                    android:textColor="#FFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -254,6 +264,7 @@
                     android:fontFamily="@font/calibrelight"
                     android:text="Válassza ki, hogy milyen irányból sütné napelemét a nap! Ha kettő közé esik, akkor mind a kettőt válassza ki!"
                     android:textAlignment="center"
+                    android:textColor="#FFF"
                     android:textSize="18sp"
                     android:textStyle="italic" />
 
@@ -273,7 +284,7 @@
                     android:fontFamily="@font/avenir_next"
                     android:gravity="center"
                     android:text="Tető dőlése"
-                    android:textColor="@android:color/background_dark"
+                    android:textColor="#FFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -285,6 +296,7 @@
                     android:fontFamily="@font/calibrelight"
                     android:text="A rendszer méretét nagy mértékben határozza meg a dőlésszög. Írja be, hogy mekkora szögben áll tetője a vízszinteshez képest."
                     android:textAlignment="center"
+                    android:textColor="#FFF"
                     android:textSize="18sp"
                     android:textStyle="italic" />
 
@@ -308,6 +320,7 @@
                     android:ems="10"
                     android:gravity="center"
                     android:hint="Adja meg a szöget!"
+                    android:textColorHint="#FFF"
                     android:inputType="number"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimaryDark"

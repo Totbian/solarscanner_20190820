@@ -5,9 +5,11 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 
 class ViewOffersFragment : Fragment(), View.OnClickListener {
 
@@ -37,7 +39,7 @@ class ViewOffersFragment : Fragment(), View.OnClickListener {
         view.findViewById<Button>(R.id.button2).setOnClickListener(this)
 
         val message = "$amount"
-        view.findViewById<Button>(R.id.button2).text = message
+        view.findViewById<TextView>(R.id.price_here_shown).text = message
 
         if(roof == true) {
             view.findViewById<Button>(R.id.button3).text = msg2
